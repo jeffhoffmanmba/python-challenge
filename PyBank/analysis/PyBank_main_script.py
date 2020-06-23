@@ -1,70 +1,42 @@
-# Unlike lists, dictionaries store information in pairs
-# ---------------------------------------------------------------
+# Create a Python script that analyzes the PyBank records to calculate each of the following:
 
-# Create a dictionary to hold the actor's names.
-actors = {}
+import os
+import csv
 
-# Create a dictionary using the built-in function.
-actors = dict()
+# initialize the directory
+os.chdir(os.path.dirname(os.path.abspath(__file__))
 
-# A dictionary of an actor.
-actors = {"name": "Tom Cruise"}
-print(f'{actors["name"]}')
+# Set path for file
+udemy_csv = os.path.join("..", "Resources", "budget_data.csv")
 
-# Add an actor to the dictionary with the key "name"
-# and the value "Denzel Washington".
-actors["name"] = "Denzel Washington"
+# Create Variables
+months = []
+net_total_profit_loss_amount = x
 
-# Print the actors dictionary.
-print(actors)
+count_months = 0
+net_total_profit_loss_amount = 0
+previous_month_profit_loss = 0
+current_month_profit_loss = 0
 
-# Print only the actor.
-print(f'{actors["name"]}')
+# Open and read csv
+with open(budget_data_csv_path newline="") as csvfile:
 
-# A list of actors
-actors_list = [
-    "Tom Cruise",
-    "Angelina Jolie",
-    "Kristen Stewart",
-    "Denzel Washington"]
+        csv_reader=csv.reader(csvfile, delimiter=",")
 
-# Overwrite the value, "Denzel Washington", with the list of actors.
-actors["name"] = actors_list
+        #Read the header row first
+        csv_header=next(csvfile)
 
-# Print the first actor
-print(f'{actors["name"][0]}')
+# The total number of months included in the dataset
+total_months_in_dataset = count_months +=1
 
-# ---------------------------------------------------------------
+# The net total amount of "Profit/Losses" over the entire period
 
-# A dictionary can contain multiple pairs of information
-actress = {
-    "name": "Angelina Jolie",
-    "genre": "Action",
-    "nationality": "United States"
-}
 
-# ---------------------------------------------------------------
+# The average of the changes in "Profit/Losses" over the entire period
 
-# A dictionary can contain multiple types of information
-another_actor = {
-    "name": "Sylvester Stallone",
-    "age": 62,
-    "married": True,
-    "best movies": [
-        "Rocky",
-        "Rocky 2",
-        "Rocky 3"]}
-print(f'{another_actor["name"]} was in {another_actor["best movies"][0]}')
-# ---------------------------------------------------------------
+# The greatest increase in profits (date and amount) over the entire period
 
-# A dictionary can even contain another dictionary
-film = {
-    "title": "Interstellar",
-    "revenues": {
-        "United States": 360,
-        "China": 250,
-        "United Kingdom": 73
-    }
-}
-print(f'{film["title"]} made {film["revenues"]["United States"]}'" million dollars in the US.")
-# ---------------------------------------------------------------
+# The greatest decrease in losses (date and amount) over the entire period
+
+# Print the analysis to the terminal and export a text file with the results
+
