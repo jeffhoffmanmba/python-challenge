@@ -21,5 +21,5 @@
     * The total number of votes each candidate won
     * The winner of the election based on popular vote.
   
-![alt test](https://github.com/jeffhoffmanmba/python-cscripting hallenge/blob/master/PyBank/revenue-per-lead.png)
+![alt test](https://github.com/jeffhoffmanmba/pythonscripting-challenge/blob/master/PyBank/revenue-per-lead.png)
 ![alt test](https://github.com/jeffhoffmanmba/python-challenge/blob/master/PyPoll/img_Vote_counting.png)
