@@ -1,8 +1,8 @@
 #Python-Challenges
 
-**Two Python scripting Challenges, PyBank and PyPoll
+##Two Python scripting Challenges, PyBank and PyPoll
   
-  *PyBank - create a Python script analyzing the financial records of a company given set of financial data composed of two columns: `Date` and `Profit/Losses`
+###**PyBank** - create a Python script analyzing the financial records of a company given set of financial data composed of two columns: `Date` and `Profit/Losses`
 
 * Task is to create a Python script that analyzes records to calculate each of the following:
   * The total number of months included in the dataset
@@ -12,7 +12,7 @@
   * The greatest decrease in losses (date and amount) over the entire period
   * In addition, final script should both print the analysis to the terminal and export a text file with the results
   
-  *PyPoLL - create Python script helping small, rural town modernize its vote counting process given a set of poll data composed of three columns: `Voter ID`, `County`, and `Candidate`. 
+###**PyPoLL** - create Python script helping small, rural town modernize its vote counting process given a set of poll data composed of three columns: `Voter ID`, `County`, and `Candidate`. 
   
  * Task is to create a Python script that analyzes the votes and calculates each of the following:
     * The total number of votes cast
