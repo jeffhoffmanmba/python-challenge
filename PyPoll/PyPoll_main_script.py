@@ -1,8 +1,8 @@
 import os
 import csv
 
-# path to data file
-budget_data_csv = os.path.join('election_data.csv')
+# set path to data file
+election_data_csv_path = os.path.join('..', 'Resources','election_data.csv')
 
 #variables
 total_votes = 0
@@ -10,7 +10,7 @@ candidates_unique = []
 candidate_vote_count = []
 
 #read the csv file
-with open(budget_data_csv, newline="") as csvfile:
+with open(election_data_csv_path, newline="") as csvfile:
     csvreader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvreader)
 
