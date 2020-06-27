@@ -40,7 +40,7 @@ max_votes = candidate_vote_count[0]
 max_index = 0
 
 for x in range(len(candidates_unique)):
-    #calculation to get the percentage, x is the looper value
+    #calculation to get the percentage, x is the for loop value
     vote_pct = round(candidate_vote_count[x]/total_votes*100, 2)
     pct.append(vote_pct)
     
@@ -57,7 +57,7 @@ election_winner = candidates_unique[max_index]
 #print(f'Election winner: {election_winner}')
 #----------------------------------------------------
 
-#To terminal
+#To Python terminal
 print('======================================================')
 print('|                  Election Results                  |')
 print('======================================================')
@@ -70,7 +70,7 @@ print(f'Election winner: {election_winner.upper()}')
 print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
 
 
-#output txt file
+#Export election results txt file
 output_file = os.path.join("pypoll_election_results.txt")
 with open(output_file, "w", newline="") as datafile:
     datafile.write('======================================================\n')
